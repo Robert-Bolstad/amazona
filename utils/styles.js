@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     minHeight: '80vh',
   },
   footer: {
+    marginTop: '10px',
     textAlign: 'center',
   },
   brand: {
@@ -20,6 +21,13 @@ const useStyles = makeStyles({
   },
   grow: {
     flexGrow: 1,
+  },
+  section: {
+    marginTop: '10px',
+    marginBottom: '10px',
+  },
+  cursor: {
+    cursor: 'pointer',
   },
 });
 
