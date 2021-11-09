@@ -29,6 +29,10 @@ const useStyles = makeStyles({
   cursor: {
     cursor: 'pointer',
   },
+  form: {
+    maxWidth: 800,
+    margin: '0 auto',
+  },
 });
 
 export default useStyles;
