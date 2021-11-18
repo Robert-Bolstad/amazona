@@ -33,7 +33,6 @@ const Shipping = () => {
     if (!userInfo) {
       router.push('/login?redirect=/shipping');
     }
-    console.log();
 
     setValue('fullName', shippingAddress.fullName);
     setValue('address', shippingAddress.address);
