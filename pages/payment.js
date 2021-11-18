@@ -33,10 +33,8 @@ const Payment = () => {
       router.push('/shipping');
     } else {
       setPaymentMethod(Cookies.get('paymentMethod') || '');
-      console.log(paymentMethod);
     }
   }, []);
-  console.log(paymentMethod);
 
   const submitHandler = (e) => {
     closeSnackbar();
@@ -53,7 +51,6 @@ const Payment = () => {
     <Layout title="Payment Method">
       <CheckoutWizard activeStep={2}></CheckoutWizard>
       <form className={classes.form} onSubmit={submitHandler}>
-        <div>{paymentMethod}</div>
         <Typography component="h1" variant="h1">
           Payment Method
         </Typography>
