@@ -10,9 +10,6 @@ import {
   CircularProgress,
   ListItemText,
   TableCell,
-} from '@material-ui/core';
-import NextLink from 'next/link';
-import {
   Button,
   Grid,
   List,
@@ -22,7 +19,9 @@ import {
   TableHead,
   TableRow,
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
+import NextLink from 'next/link';
+
 import useStyles from '../utils/styles';
 
 function reducer(state, action) {
@@ -92,7 +91,7 @@ const OrderHistory = () => {
               <ListItem component="h1" variant="h1">
                 <Typography>Order History</Typography>
               </ListItem>
-              <ListItem component="h1" variant="h1">
+              <ListItem>
                 {loading ? (
                   <CircularProgress />
                 ) : error ? (
@@ -127,7 +126,9 @@ const OrderHistory = () => {
                           </TableCell>
                           <TableCell>
                             <NextLink href={`/order/${order._id}`} passHref>
-                              <Button variant="contained">Details</Button>
+                              <Button variant="contained" color="primary">
+                                Details
+                              </Button>
                             </NextLink>
                           </TableCell>
                         </TableRow>
