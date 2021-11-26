@@ -136,7 +136,7 @@ const Order = ({ params }) => {
     }
   }, [order, successPay, successDeliver]);
 
-  const { closeSnackbar, enqueueSnackbar } = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
 
   function createOrder(data, actions) {
     return actions.order
