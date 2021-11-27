@@ -20,6 +20,7 @@ import {
   TableHead,
   TableRow,
 } from '@material-ui/core';
+
 import NextLink from 'next/link';
 
 import useStyles from '../../utils/styles';
